@@ -1,0 +1,127 @@
+import React, { useState, useEffect } from "react";
+import Button from "@rescui/button";
+import { cardCn } from "@rescui/card/lib/card";
+import "@rescui/card/lib/index.css";
+import { useTextStyles } from "@rescui/typography";
+import cn from "classnames";
+import { ThemeProvider } from "@rescui/ui-contexts";
+
+import { Container, Section } from "app/components/layout";
+import { cardsData } from "./data";
+import "./index.scss";
+
+export function HeaderSection() {
+  const textCn = useTextStyles();
+
+  /**
+   * SSR SAFETY:
+   * We initialize with the full cardsData.
+   * window.innerWidth is only checked inside useEffect to prevent
+   * "window is not defined" errors during Server-Side Rendering.
+   */
+  const [visibleCards, setVisibleCards] = useState(cardsData);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setVisibleCards(cardsData.slice(0, 2));
+      } else {
+        setVisibleCards(cardsData);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    <ThemeProvider theme="dark">
+      <Section className="header-section">
+        <Container>
+          {/* Hero Title */}
+          <h1 className={textCn("rs-hero")}>
+            A modern programming language that makes developers happier
+          </h1>
+
+          {/* Actions & Attribution */}
+          <div className="header-section__actions">
+            <div className="header-section__buttons">
+              <Button size="l" href="https://kotlinlang.org/docs/home.html">
+                Get started
+              </Button>
+              <Button
+                mode="outline"
+                size="l"
+                href="/docs/home.html"
+                className="header-section__why-btn"
+              >
+                Why Kotlin
+              </Button>
+            </div>
+
+            <div className="header-section__contributors">
+              <img src="/images/jetbrains-logo.svg" alt="JetBrains Logo" />
+              <p className={textCn("rs-text-2")}>
+                Developed by{" "}
+                <a
+                  className={textCn("rs-link")}
+                  href="https://www.jetbrains.com/"
+                >
+                  JetBrains
+                </a>{" "}
+                & Open-source{" "}
+                <a
+                  className={textCn("rs-link")}
+                  href="https://github.com/JetBrains/kotlin/graphs/contributors"
+                >
+                  Contributors
+                </a>
+              </p>
+            </div>
+          </div>
+
+          {/* Feature Cards Grid */}
+          <div className="kto-grid kto-grid-gap-16 kto-offset-top-48">
+            {visibleCards.map((card) => (
+              <a
+                key={card.id}
+                href={card.link}
+                className={cn(
+                  cardCn({
+                    theme: "dark",
+                    mode: "classic",
+                    isClickable: true,
+                  }),
+                  "kto-col-3 kto-col-md-6 kto-col-sm-12",
+                )}
+              >
+                <img src={card.img} alt={card.title} />
+                <h2 className={cn(textCn("rs-h3"), "kto-offset-top-16")}>
+                  {card.title}
+                </h2>
+                <p className={cn(textCn("rs-text-2"), "kto-offset-top-16")}>
+                  {card.subTitle}
+                </p>
+              </a>
+            ))}
+          </div>
+
+          {/* Secondary Links */}
+          <p className={cn(textCn("rs-text-2"), "kto-offset-top-16")}>
+            <a className={textCn("rs-link")} href="/docs/multiplatform.html">
+              Multiplatform for Other Platforms
+            </a>
+            {", "}
+            <a
+              className={textCn("rs-link")}
+              href="/docs/data-science-overview.html"
+            >
+              Data Science
+            </a>
+          </p>
+        </Container>
+      </Section>
+    </ThemeProvider>
+  );
+}

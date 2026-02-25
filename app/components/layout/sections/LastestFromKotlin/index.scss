@@ -1,0 +1,42 @@
+.latest-from-kotlin-section {
+    background-color: #27282C; // Match the overview-page
+    padding: 80px 0;
+    color: #fff;
+
+    &__banner {
+        overflow: hidden;
+        border-radius: 8px; // Matches the JetBrains design language
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+
+        &-img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__tag {
+        color: rgba(255, 255, 255, 0.5) !important;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    &__news-link {
+        color: #fff !important;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--rs-color-primary) !important;
+            text-decoration: underline;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

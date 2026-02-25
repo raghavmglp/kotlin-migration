@@ -1,0 +1,33 @@
+// app/routes/_index/data.ts
+
+export const cardsData = [
+  {
+    id: 1,
+    title: "Multiplatform Mobile",
+    subTitle: "Share the logic of your Android and iOS apps while keeping UX native",
+    link: "#",
+    // No import needed! Vite knows to look in the 'public' folder for this path.
+    img: "/images/images/good-for/mobile.svg",
+  },
+  {
+    id: 2,
+    title: "Server-side",
+    subTitle: "Modern development experience with familiar JVM technology",
+    link: "#",
+    img: "/images/images/good-for/server-side.svg",
+  },
+  {
+    id: 3,
+    title: "Web Frontend",
+    subTitle: "Extend your projects to web",
+    link: "#",
+    img: "/images/images/good-for/web.svg",
+  },
+  {
+    id: 4,
+    title: "Android",
+    subTitle: "Recommended by Google for building Android apps",
+    link: "#",
+    img: "/images/images/good-for/android.svg",
+  },
+];

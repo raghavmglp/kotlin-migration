@@ -1,0 +1,21 @@
+// 1. COLORS - Bridging RescUI CSS vars to legacy Sass vars
+$base-color: var(--rs-color-black, #19191C);
+$white-color: var(--rs-color-white, #FFFFFF);
+$grey-color: var(--rs-color-grey-70, #5E5E60);
+
+// Link colors (Kotlin Blue)
+$base-link-color: #167DFF;
+$base-link-hover-color: #0056b3;
+
+// 2. TYPOGRAPHY - Standard JetBrains Branding
+// Based on your fonts.scss, we prioritize Inter/Open Sans
+$font-family-sans-serif: "Inter", "Open Sans", system-ui, -apple-system, sans-serif;
+$font-family-mono: "JetBrains Mono", "Droid Sans Mono", monospace;
+
+// Font sizes
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+// 3. RESPONSIVE BREAKPOINTS (Used in _adaptive.scss)
+$tablet-width: 768px;
+$desktop-width: 1024px;
