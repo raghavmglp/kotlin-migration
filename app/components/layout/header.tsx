@@ -117,7 +117,7 @@ function NavItem({
     <li
       className="ktl-horizontal-menu-module_menu-item-wrap_1iQfh"
       onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onMouseLeave={() => setTimeout(() => setOpen(false), 250)}
     >
       <span
         className={cn(
@@ -176,7 +176,7 @@ export default function Header() {
           aria-label="Search"
           onClick={() => {}}
         >
-          <SearchIcon />
+          {/* <SearchIcon /> */}
         </button>
       </header>
     </ThemeProvider>

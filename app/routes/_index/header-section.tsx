@@ -4,6 +4,7 @@ import { cardCn } from "@rescui/card/lib/card";
 import "@rescui/card/lib/index.css";
 import { useTextStyles } from "@rescui/typography";
 import cn from "classnames";
+
 import { Container, Section } from "~/components/layout/primitives";
 import { cardsData } from "./data";
 import "./index.scss";

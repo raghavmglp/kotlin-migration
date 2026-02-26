@@ -1,4 +1,6 @@
 import { ThemeProvider } from "@rescui/ui-contexts";
+import { useTextStyles } from "@rescui/typography";
+import cn from "classnames";
 import "@jetbrains/kotlin-web-site-ui/dist/footer.css";
 import GitHubIcon from "@rescui/icons/lib/git-hub";
 import TwitterIcon from "@rescui/icons/lib/twitter";
@@ -70,11 +72,18 @@ const navLinks = [
 ];
 
 function FooterContent() {
+  const textCn = useTextStyles();
+
   return (
     <footer className="ktl-footer-module_footer_3ENKj ktl-footer-module_footer-dark-theme_1lVqh">
       {/* Social */}
       <div className="ktl-footer-module_social-list-area_3BpCr">
-        <div className="rs-h4 rs-h4_theme_dark ktl-footer-module_social-list-title_2m4tY">
+        <div
+          className={cn(
+            textCn("rs-h4"),
+            "ktl-footer-module_social-list-title_2m4tY",
+          )}
+        >
           Stay in touch:
         </div>
         <div className="ktl-social-list-module_social-list_m5d4R">
