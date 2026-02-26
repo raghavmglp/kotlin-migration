@@ -2,59 +2,11 @@
   background-color: #27282c;
 }
 
-// app/routes/_index/index.scss
-
-// 1. Core Layout Utilities (The code you provided)
-.kto-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  width: 100%; // Ensure it fills the container
-}
-
-// Gap Utilities
-.kto-grid-gap-16 {
-  gap: 16px;
-}
-.kto-grid-gap-32 {
-  gap: 32px;
-}
-
-// Column Spans (Desktop)
-@for $i from 1 through 12 {
-  .kto-col-#{$i} {
-    grid-column: span #{$i};
-  }
-}
-
-// Responsive Columns
-@media (max-width: 1000px) {
-  @for $i from 1 through 12 {
-    .kto-col-md-#{$i} {
-      grid-column: span #{$i};
-    }
-  }
-}
-
-@media (max-width: 640px) {
-  @for $i from 1 through 12 {
-    .kto-col-sm-#{$i} {
-      grid-column: span #{$i};
-    }
-  }
-}
-
-// Offset Utilities
-.kto-offset-top-48 {
-  margin-top: 48px;
-}
-.kto-offset-top-16 {
-  margin-top: 16px;
-}
-
-// 2. Section Specific Styling
+// Section Specific Styling
 .header-section {
-  padding: 80px 0;
+  padding: 96px 0;
   background-color: var(--rs-color-background-dark);
+  color: var(--rs-text-primary);
 
   &__actions {
     display: flex;
@@ -68,24 +20,46 @@
   &__buttons {
     display: flex;
     gap: 16px;
+    align-items: center;
   }
-
-  background-color: var(--rs-color-background-dark);
-  color: var(--rs-text-primary);
 
   &__contributors {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 
     img {
-      height: 24px;
-      width: auto;
+      height: 60px;
+      width: 60px;
+      display: block;
+      line-height: 1;
+    }
+
+    .kto-grid img {
+      height: 48px;
+      width: 48px;
     }
   }
 }
 
-// Feature Card overrides to match Kotlin look
+.latest-from-kotlin-section {
+  background-color: transparent;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  &__banner-link {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// Feature Card overrides
 .feature-card {
   text-decoration: none;
   transition: transform 0.2s ease;

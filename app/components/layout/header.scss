@@ -1,0 +1,110 @@
+.ktl-header {
+  position: relative;
+  padding: 0 32px;
+  background: var(--ktl-dark-100);
+  display: flex;
+  align-items: center;
+  height: 64px;
+  justify-content: space-between;
+  z-index: 906;
+  box-shadow: inset 0 -1px rgba(255, 255, 255, 0.2);
+
+  @media (max-width: 640px) {
+    padding: 0 16px;
+    height: 48px;
+  }
+}
+
+.ktl-header__logo {
+  flex-grow: 1;
+  display: block;
+  width: 100px;
+  height: 24px;
+  text-decoration: none;
+  margin-left: -4px;
+  cursor: pointer;
+}
+
+.ktl-header__nav {
+  display: block;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.ktl-header__nav-list {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ktl-header__nav-item {
+  position: relative;
+}
+
+.ktl-header__nav-link {
+  display: block;
+  line-height: 60px !important;
+  color: rgba(255, 255, 255, 0.75);
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+  }
+}
+
+.ktl-header__dropdown {
+  position: absolute;
+  top: 100%;
+  min-width: 260px;
+  margin: 8px 0 0;
+  list-style: none;
+  padding: 8px 0;
+  white-space: nowrap;
+  background: var(--ktl-dark-100);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 910;
+}
+
+.ktl-header__dropdown-item {
+  display: block;
+  text-decoration: none;
+  padding: 8px 16px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 300ms, background 300ms;
+
+  &:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+  }
+}
+
+.ktl-header__search {
+  display: flex;
+  appearance: none;
+  border: 0 transparent;
+  outline: 0 transparent;
+  cursor: pointer;
+  background: 0 0;
+  padding: 0;
+  margin: 0 0 0 32px;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.75);
+
+  &:hover {
+    color: #fff;
+  }
+}

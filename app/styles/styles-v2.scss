@@ -1,24 +1,21 @@
-@import 'reset.scss';
-@import 'fonts.scss';
+@import "reset.scss";
+@import "fonts.scss";
+@import "grid.scss";
 
 body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    
-    // --- THE FIX: Bridge to RescUI ---
-    // This tells the body to use whatever color the ThemeProvider dictates
-    background-color: var(--rs-color-background-primary);
-    color: var(--rs-text-primary);
-}
-
-// Ensure headers also follow the theme
-h1, h2, h3, h4, h5, h6, p {
-    color: var(--rs-text-primary);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--rs-color-background-primary);
+  color: var(--rs-text-primary);
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ktl-logo-large-module_version-tag_4KEoG {
+  font-size: 13px;
 }

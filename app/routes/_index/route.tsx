@@ -1,19 +1,21 @@
-// app/routes/_index/route.tsx
-import { LatestFromKotlinSection } from "~/components/layout/sections/LastestFromKotlin";
-import Footer from "./footer";
+import { ThemeProvider } from "@rescui/ui-contexts";
 import { HeaderSection } from "./header-section";
+import { LatestFromKotlinSection } from "~/components/layout/sections/LastestFromKotlin";
+import { WhyKotlinSection } from "~/components/layout/sections/WhyKotlin";
+import { UsageSection } from "~/components/layout/sections/Usage";
+import { StartSection } from "~/components/layout/sections/Start";
+import Footer from "~/components/layout/footer";
 
 export default function Index() {
   return (
-    <main>
+    <ThemeProvider theme="dark">
       <div className="overview-page">
         <HeaderSection />
-        {/* Other sections that also need the dark background */}
+        <LatestFromKotlinSection />
+        <WhyKotlinSection />
+        <UsageSection />
+        <StartSection />
       </div>
-      <LatestFromKotlinSection />
-
-      <Footer />
-      {/* We will add the other sections here later */}
-    </main>
+    </ThemeProvider>
   );
 }

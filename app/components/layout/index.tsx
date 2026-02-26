@@ -1,25 +1,15 @@
-// app/components/layout/index.tsx
-import React from 'react';
-import type { ReactNode } from 'react';
-import './index.scss';
+import { Outlet } from "react-router";
+import Header from "./header";
+import Footer from "./footer";
 
-interface LayoutProps {
-    children: ReactNode;
-    className?: string;
-}
-
-export function Section({ children, className = '' }: LayoutProps) {
-    return (
-        <section className={`kto-layout-section ${className}`}>
-            {children}
-        </section>
-    );
-}
-
-export function Container({ children }: { children: ReactNode }) {
-    return (
-        <div className="kto-layout-container">
-            {children}
-        </div>
-    );
+export default function Layout() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
+  );
 }

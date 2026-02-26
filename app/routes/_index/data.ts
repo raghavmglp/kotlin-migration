@@ -1,12 +1,9 @@
-// app/routes/_index/data.ts
-
 export const cardsData = [
   {
     id: 1,
     title: "Multiplatform Mobile",
     subTitle: "Share the logic of your Android and iOS apps while keeping UX native",
     link: "#",
-    // No import needed! Vite knows to look in the 'public' folder for this path.
     img: "/images/images/good-for/mobile.svg",
   },
   {

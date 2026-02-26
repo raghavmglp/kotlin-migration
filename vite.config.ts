@@ -1,4 +1,3 @@
-// vite.config.ts
 import { reactRouter } from "@react-router/dev/vite";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
@@ -6,6 +5,9 @@ import path from "node:path";
 
 export default defineConfig({
   plugins: [reactRouter(), tsconfigPaths()],
+  resolve: {
+    dedupe: ["react", "react-dom"],
+  },
   css: {
     preprocessorOptions: {
       scss: {
@@ -15,7 +17,6 @@ export default defineConfig({
     },
   },
   ssr: {
-    // This tells Vite to bundle @rescui packages instead of trying to require them
     noExternal: [/^@rescui\//],
   },
 });
