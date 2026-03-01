@@ -1,4 +1,4 @@
-# Kotlin Programming Language — React Router 7 Migration
+# Kotlin Programming Language: React Router 7 Migration
 
 A migration of the [kotlinlang.org v1.6.20](https://kotlinlang.org) homepage from a legacy React + Flask setup to **React Router 7 Framework Mode** with Server-Side Rendering (SSR). Done as a part of the assignment for the [JetBrains Internship Application](https://github.com/JetBrains/kotlin-web-site-jetsites-internship-2026/)
 
