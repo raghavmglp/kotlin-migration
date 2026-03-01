@@ -67,12 +67,12 @@ app/
 
 The migration makes extensive use of JetBrains' `@rescui` design system:
 
-- `@rescui/button` — all CTAs and action buttons
-- `@rescui/card` — feature cards in the header section and usage testimonials
-- `@rescui/tab-list` — programming language code example tabs in WhyKotlin
-- `@rescui/typography` — all text styles via `useTextStyles` hook
-- `@rescui/ui-contexts` — `ThemeProvider` for light/dark theme switching
-- `@rescui/icons` — navigation icons (hamburger, close, search) and footer social icons
+- `@rescui/button`: all CTAs and action buttons
+- `@rescui/card`: feature cards in the header section and usage testimonials
+- `@rescui/tab-list`: programming language code example tabs in WhyKotlin
+- `@rescui/typography`: all text styles via `useTextStyles` hook
+- `@rescui/ui-contexts`: `ThemeProvider` for light/dark theme switching
+- `@rescui/icons`: navigation icons (hamburger, close, search) and footer social icons
 
 ### Note on Peer Dependencies
 
