@@ -2,7 +2,8 @@ export const cardsData = [
   {
     id: 1,
     title: "Multiplatform Mobile",
-    subTitle: "Share the logic of your Android and iOS apps while keeping UX native",
+    subTitle:
+      "Share the logic of your Android and iOS apps while keeping UX native",
     link: "#",
     img: "/images/images/good-for/mobile.svg",
   },

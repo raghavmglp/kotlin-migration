@@ -1,82 +1,15 @@
-import { ThemeProvider } from "@rescui/ui-contexts";
-import { useTextStyles } from "@rescui/typography";
-import cn from "classnames";
 import "@jetbrains/kotlin-web-site-ui/dist/footer.css";
-import GitHubIcon from "@rescui/icons/lib/git-hub";
-import TwitterIcon from "@rescui/icons/lib/twitter";
-import SlackIcon from "@rescui/icons/lib/slack";
-import RedditIcon from "@rescui/icons/lib/reddit";
-import StackOverflowIcon from "@rescui/icons/lib/stack-overflow";
-import YoutubeIcon from "@rescui/icons/lib/youtube";
+import { useTextStyles } from "@rescui/typography";
+import { ThemeProvider } from "@rescui/ui-contexts";
+import cn from "classnames";
 
-const socialLinks = [
-  {
-    href: "https://github.com/JetBrains/kotlin",
-    title: "Kotlin on GitHub",
-    Icon: GitHubIcon,
-  },
-  {
-    href: "https://twitter.com/kotlin",
-    title: "Kotlin on Twitter",
-    Icon: TwitterIcon,
-  },
-  {
-    href: "https://surveys.jetbrains.com/s3/kotlin-slack-sign-up",
-    title: "Kotlin Slack",
-    Icon: SlackIcon,
-  },
-  {
-    href: "https://www.reddit.com/r/Kotlin/",
-    title: "Kotlin on Reddit",
-    Icon: RedditIcon,
-  },
-  {
-    href: "https://stackoverflow.com/questions/tagged/kotlin",
-    title: "Kotlin on Stack Overflow",
-    Icon: StackOverflowIcon,
-  },
-  {
-    href: "https://www.youtube.com/channel/UCP7uiEZIqci43m22KDl0sNw",
-    title: "Kotlin on YouTube",
-    Icon: YoutubeIcon,
-  },
-];
-
-const navLinks = [
-  {
-    href: "https://kotlinlang.org/docs/contribute.html",
-    title: "Contributing to Kotlin",
-  },
-  { href: "https://kotlinlang.org/docs/releases.html", title: "Releases" },
-  {
-    href: "https://kotlinlang.org/assets/kotlin-media-kit.pdf",
-    title: "Press Kit",
-  },
-  { href: "https://kotlinlang.org/docs/security.html", title: "Security" },
-  { href: "https://blog.jetbrains.com/kotlin/", title: "Blog", external: true },
-  {
-    href: "https://youtrack.jetbrains.com/issues/KT",
-    title: "Issue Tracker",
-    external: true,
-  },
-  {
-    href: "https://resources.jetbrains.com/storage/products/kotlin/docs/kotlin_logos.zip",
-    title: "Brand assets",
-    external: true,
-  },
-  {
-    href: "https://www.jetbrains.com/careers/jobs/?team=Kotlin",
-    title: "Careers",
-    external: true,
-  },
-];
+import { navLinks, socialLinks } from "./footer-data";
 
 function FooterContent() {
   const textCn = useTextStyles();
 
   return (
     <footer className="ktl-footer-module_footer_3ENKj ktl-footer-module_footer-dark-theme_1lVqh">
-      {/* Social */}
       <div className="ktl-footer-module_social-list-area_3BpCr">
         <div
           className={cn(
@@ -102,7 +35,6 @@ function FooterContent() {
         </div>
       </div>
 
-      {/* Nav */}
       <nav className="ktl-footer-module_nav-list-area_11ftH">
         <ul className="ktl-nav-list-module_nav-list_2YPZ6">
           {navLinks.map((link) => (
@@ -124,15 +56,14 @@ function FooterContent() {
         </ul>
       </nav>
 
-      {/* Copyright */}
       <div className="rs-text-3 rs-text-3_hardness_pale rs-text-3_theme_dark ktl-footer-module_text-area_1SpnS">
         <div className="ktl-footer-module_copyright_2uBX0">
-          Kotlin™ is protected under the{" "}
+          Kotlin™ is&nbsp;protected under the{" "}
           <a
             className="rs-link rs-link_hardness_pale rs-link_mode_nude rs-link_theme_dark ktl-footer-module_underlined-link_Pu1QP"
             href="https://kotlinlang.org/foundation/kotlin-foundation.html"
           >
-            Kotlin Foundation
+            Kotlin&nbsp;Foundation
           </a>{" "}
           and licensed under the{" "}
           <a
@@ -141,12 +72,12 @@ function FooterContent() {
             rel="noreferrer"
             href="https://github.com/JetBrains/kotlin-web-site/blob/master/LICENSE"
           >
-            Apache 2 license
+            Apache 2&nbsp;license
           </a>
           .
-        </div>
+        </div>{" "}
         <div className="ktl-footer-module_motto_22kgv">
-          Supported and developed by{" "}
+          Supported and developed by&nbsp;
           <a
             className="rs-link rs-link_hardness_pale rs-link_mode_nude rs-link_theme_dark ktl-footer-module_underlined-link_Pu1QP"
             href="https://www.jetbrains.com/"

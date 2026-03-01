@@ -35,4 +35,9 @@
   font-family: "JetBrains Mono", monospace;
   font-size: 14px;
   line-height: 24px;
+
+  .hljs {
+    background: transparent;
+    padding: 0;
+  }
 }

@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import Button from "@rescui/button";
-import { useTextStyles } from "@rescui/typography";
 import { cardCn } from "@rescui/card/lib/card";
 import "@rescui/card/lib/index.css";
+import { useTextStyles } from "@rescui/typography";
 import { ThemeProvider } from "@rescui/ui-contexts";
 import cn from "classnames";
 
 import { Container, Section } from "~/components/layout/primitives";
+
 import { testimonials } from "./data/data";
 import "./index.scss";
 
@@ -37,7 +39,10 @@ function UsageSectionContent() {
       <Container>
         <h2 className={textCn("rs-hero")}>Kotlin Usage Highlights</h2>
 
-        <div className="kto-offset-top-16" style={{ display: "flex", justifyContent: "flex-end" }}>
+        <div
+          className="kto-offset-top-16"
+          style={{ display: "flex", justifyContent: "flex-end" }}
+        >
           <Button mode="outline" size="s" onClick={handleSort}>
             Sort: {sortByName ? "A-Z" : "Default"}
           </Button>
@@ -63,7 +68,9 @@ function UsageSectionContent() {
                   "usage-section__logo_spring": item.company === "Spring",
                 })}
               />
-              <p className={cn(textCn("rs-text-2"), "kto-offset-top-8")}>{item.text}</p>
+              <p className={cn(textCn("rs-text-2"), "kto-offset-top-8")}>
+                {item.text}
+              </p>
             </a>
           ))}
         </div>

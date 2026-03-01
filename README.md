@@ -1,87 +1,84 @@
-# Welcome to React Router!
+# Kotlin Programming Language — React Router 7 Migration
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A migration of the [kotlinlang.org v1.6.20](https://kotlinlang.org) homepage from a legacy React + Flask setup to **React Router 7 Framework Mode** with Server-Side Rendering (SSR). Done as a part of the assignment for the [JetBrains Internship Application](https://github.com/JetBrains/kotlin-web-site-jetsites-internship-2026/)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Raghav Mangalapalli - TU Eindhoven
 
-## Features
+## Requirements
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- Node.js v20+
+- npm
 
 ## Getting Started
 
-### Installation
-
-Install the dependencies:
+Install dependencies:
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
-### Development
-
-Start the development server with HMR:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+## Migration Approach
 
-## Building for Production
+### React Router 7 Framework Mode
 
-Create a production build:
+The project was migrated from a Flask-served React SPA to React Router 7 in framework mode. This enables full Server-Side Rendering. the page renders on the server and is hydrated on the client.
 
-```bash
-npm run build
+The routing is defined in `app/routes.ts` using a single layout route wrapping the index page:
+
+```ts
+layout("components/layout/index.tsx", [index("routes/_index/route.tsx")]);
 ```
 
-## Deployment
+### SSR Compatibility
 
-### Docker Deployment
+The original project made direct `window` and `localStorage` calls at render time, which breaks SSR. These were fixed by moving all browser API calls into `useEffect` hooks so they only run on the client after hydration. For example:
 
-To build and run using Docker:
+- `window.innerWidth` checks for responsive card visibility in `HeaderSection`
+- `localStorage` reads for testimonial sort order in `UsageSection`
 
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+### Project Structure
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+app/
+├── components/
+│   └── layout/
+│       ├── Header/          # Site header with responsive mobile menu
+│       ├── Footer/          # Site footer
+│       ├── primitives/      # Shared Section and Container layout components
+│       └── sections/        # Page sections
+│           ├── HeaderSection/
+│           ├── LatestFromKotlin/
+│           ├── WhyKotlin/
+│           ├── Usage/
+│           └── Start/
+├── routes/
+│   └── _index/              # Index route
+├── styles/                  # Global styles, grid, reset, fonts
+└── root.tsx                 # App shell with HTML document
 ```
 
-## Styling
+### rescui Component Usage
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+The migration makes extensive use of JetBrains' `@rescui` design system:
 
----
+- `@rescui/button` — all CTAs and action buttons
+- `@rescui/card` — feature cards in the header section and usage testimonials
+- `@rescui/tab-list` — programming language code example tabs in WhyKotlin
+- `@rescui/typography` — all text styles via `useTextStyles` hook
+- `@rescui/ui-contexts` — `ThemeProvider` for light/dark theme switching
+- `@rescui/icons` — navigation icons (hamburger, close, search) and footer social icons
 
-Built with ❤️ using React Router.
+### Note on Peer Dependencies
+
+Some `@rescui` packages declare peer dependencies on React 16–18. Since this project uses React 19, installation requires the `--legacy-peer-deps` flag. The packages function correctly at runtime despite the version mismatch.
+
+### Potential Improvements
+
+- Find a way to make the original ktl components work as a direct improvements instead of rebulding them from scratch.
+- Integrate more @rescui components into the codebase.

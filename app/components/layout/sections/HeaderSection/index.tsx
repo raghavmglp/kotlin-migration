@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import Button from "@rescui/button";
 import { cardCn } from "@rescui/card/lib/card";
 import "@rescui/card/lib/index.css";
@@ -6,7 +7,8 @@ import { useTextStyles } from "@rescui/typography";
 import cn from "classnames";
 
 import { Container, Section } from "~/components/layout/primitives";
-import { cardsData } from "./data";
+
+import { cardsData } from "./data/data";
 import "./index.scss";
 
 export function HeaderSection() {
@@ -48,26 +50,26 @@ export function HeaderSection() {
             >
               Why Kotlin
             </Button>
+          </div>
 
-            <div className="header-section__contributors">
-              <img src="/images/jetbrains-logo.svg" alt="JetBrains Logo" />
-              <p className={textCn("rs-text-2")}>
-                Developed by{" "}
-                <a
-                  className={textCn("rs-link")}
-                  href="https://www.jetbrains.com/"
-                >
-                  JetBrains
-                </a>{" "}
-                & Open-source{" "}
-                <a
-                  className={textCn("rs-link")}
-                  href="https://github.com/JetBrains/kotlin/graphs/contributors"
-                >
-                  Contributors
-                </a>
-              </p>
-            </div>
+          <div className="header-section__contributors">
+            <img src="/images/jetbrains-logo.svg" alt="JetBrains Logo" />
+            <p className={textCn("rs-text-2")}>
+              Developed by{" "}
+              <a
+                className={textCn("rs-link")}
+                href="https://www.jetbrains.com/"
+              >
+                JetBrains
+              </a>{" "}
+              & Open-source{" "}
+              <a
+                className={textCn("rs-link")}
+                href="https://github.com/JetBrains/kotlin/graphs/contributors"
+              >
+                Contributors
+              </a>
+            </p>
           </div>
         </div>
 

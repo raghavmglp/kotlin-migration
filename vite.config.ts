@@ -1,7 +1,7 @@
 import { reactRouter } from "@react-router/dev/vite";
+import path from "node:path";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import path from "node:path";
 
 export default defineConfig({
   plugins: [reactRouter(), tsconfigPaths()],
@@ -12,7 +12,6 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         loadPaths: [path.resolve(__dirname, "app/styles")],
-        additionalData: `@import "vars-bridge";`,
       },
     },
   },

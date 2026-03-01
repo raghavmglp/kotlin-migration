@@ -4,6 +4,7 @@ import { ThemeProvider } from "@rescui/ui-contexts";
 import cn from "classnames";
 
 import { Container, Section } from "~/components/layout/primitives";
+
 import "./index.scss";
 
 function StartSectionContent() {
@@ -16,8 +17,7 @@ function StartSectionContent() {
         <div className="kto-grid kto-offset-top-48">
           <h2 className={cn(textCn("rs-hero"), "kto-col-10 kto-col-md-12")}>
             Start using Kotlin today!
-          </h2>
-          <h2 className={cn(textCn("rs-hero"), "kto-col-10 kto-col-md-12")}>
+            <br />
             Build your first app in your favorite IDE
           </h2>
         </div>

@@ -1,10 +1,10 @@
 import { ThemeProvider } from "@rescui/ui-contexts";
-import { HeaderSection } from "./header-section";
-import { LatestFromKotlinSection } from "~/components/layout/sections/LastestFromKotlin";
-import { WhyKotlinSection } from "~/components/layout/sections/WhyKotlin";
-import { UsageSection } from "~/components/layout/sections/Usage";
+
+import { HeaderSection } from "~/components/layout/sections/HeaderSection";
+import { LatestFromKotlinSection } from "~/components/layout/sections/LatestFromKotlin";
 import { StartSection } from "~/components/layout/sections/Start";
-import Footer from "~/components/layout/footer";
+import { UsageSection } from "~/components/layout/sections/Usage";
+import { WhyKotlinSection } from "~/components/layout/sections/WhyKotlin";
 
 export default function Index() {
   return (

@@ -6,8 +6,8 @@
 }
 .rs-super-hero {
   letter-spacing: -0.02em;
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -23,7 +23,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-headers, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-headers,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 142px;
   font-size: var(--rs-super-hero-font-size, 142px);
   font-weight: 530;
@@ -33,15 +52,15 @@
 }
 @media screen and (max-width: 1000px) {
   .rs-super-hero {
-    --rs-super-hero-font-size:var(--rs-hero-font-size, 72px);
-    --rs-super-hero-line-height:var(--rs-hero-line-height, 72px);
+    --rs-super-hero-font-size: var(--rs-hero-font-size, 72px);
+    --rs-super-hero-line-height: var(--rs-hero-line-height, 72px);
     letter-spacing: -0.005em;
   }
 }
 @media screen and (max-width: 640px) {
   .rs-super-hero {
-    --rs-super-hero-font-size:var(--rs-hero-font-size-mobile, 42px);
-    --rs-super-hero-line-height:var(--rs-hero-line-height-mobile, 50px);
+    --rs-super-hero-font-size: var(--rs-hero-font-size-mobile, 42px);
+    --rs-super-hero-line-height: var(--rs-hero-line-height-mobile, 50px);
     letter-spacing: -0.001em;
   }
 }
@@ -49,18 +68,18 @@
   letter-spacing: normal;
 }
 .rs-super-hero_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-super-hero_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-super-hero_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-digits {
   letter-spacing: -0.005em;
   font-variant-numeric: tabular-nums;
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -76,7 +95,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-headers, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-headers,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 69px;
   font-size: var(--rs-digits-font-size, 69px);
   font-weight: 320;
@@ -86,8 +124,8 @@
 }
 @media screen and (max-width: 640px) {
   .rs-digits {
-    --rs-digits-font-size:var(--rs-digits-font-size-mobile, 40px);
-    --rs-digits-line-height:var(--rs-digits-line-height-mobile, 44px);
+    --rs-digits-font-size: var(--rs-digits-font-size-mobile, 40px);
+    --rs-digits-line-height: var(--rs-digits-line-height-mobile, 44px);
     letter-spacing: normal;
   }
 }
@@ -95,17 +133,17 @@
   letter-spacing: normal;
 }
 .rs-digits_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-digits_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-digits_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-hero {
   letter-spacing: -0.005em;
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -121,7 +159,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-headers, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-headers,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 72px;
   font-size: var(--rs-hero-font-size, 72px);
   font-weight: 530;
@@ -131,8 +188,8 @@
 }
 @media screen and (max-width: 640px) {
   .rs-hero {
-    --rs-hero-font-size:var(--rs-hero-font-size-mobile, 42px);
-    --rs-hero-line-height:var(--rs-hero-font-size-mobile, 50px);
+    --rs-hero-font-size: var(--rs-hero-font-size-mobile, 42px);
+    --rs-hero-line-height: var(--rs-hero-font-size-mobile, 50px);
     letter-spacing: -0.001em;
   }
 }
@@ -140,16 +197,16 @@
   letter-spacing: normal;
 }
 .rs-hero_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-hero_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-hero_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-subtitle-1 {
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -165,7 +222,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-headers, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-headers,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 39px;
   font-size: var(--rs-subtitle-1-font-size, 39px);
   font-weight: 320;
@@ -175,22 +251,22 @@
 }
 @media screen and (max-width: 640px) {
   .rs-subtitle-1 {
-    --rs-subtitle-1-font-size:var(--rs-subtitle-2-font-size-mobile, 23px);
-    --rs-subtitle-1-line-height:var(--rs-subtitle-2-line-height-mobile, 30px);
+    --rs-subtitle-1-font-size: var(--rs-subtitle-2-font-size-mobile, 23px);
+    --rs-subtitle-1-line-height: var(--rs-subtitle-2-line-height-mobile, 30px);
   }
 }
 .rs-subtitle-1_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-subtitle-1_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-subtitle-1_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-h1 {
   letter-spacing: -0.001em;
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -206,7 +282,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-headers, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-headers,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 43px;
   font-size: var(--rs-h1-font-size, 43px);
   font-weight: 530;
@@ -216,22 +311,22 @@
 }
 @media screen and (max-width: 640px) {
   .rs-h1 {
-    --rs-h1-font-size:var(--rs-h1-font-size-mobile, 35px);
-    --rs-h1-line-height:var(--rs-h1-line-height-mobile, 39px);
+    --rs-h1-font-size: var(--rs-h1-font-size-mobile, 35px);
+    --rs-h1-line-height: var(--rs-h1-line-height-mobile, 39px);
     letter-spacing: normal;
   }
 }
 .rs-h1_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-h1_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-h1_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-subtitle-2 {
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -247,7 +342,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-headers, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-headers,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 29px;
   font-size: var(--rs-subtitle-2-font-size, 29px);
   font-weight: 320;
@@ -257,21 +371,21 @@
 }
 @media screen and (max-width: 640px) {
   .rs-subtitle-2 {
-    --rs-subtitle-2-font-size:var(--rs-subtitle-2-font-size-mobile, 23px);
-    --rs-subtitle-2-line-height:var(--rs-subtitle-2-line-height-mobile, 30px);
+    --rs-subtitle-2-font-size: var(--rs-subtitle-2-font-size-mobile, 23px);
+    --rs-subtitle-2-line-height: var(--rs-subtitle-2-line-height-mobile, 30px);
   }
 }
 .rs-subtitle-2_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-subtitle-2_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-subtitle-2_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-h2 {
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -287,7 +401,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-headers, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-headers,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 35px;
   font-size: var(--rs-h2-font-size, 35px);
   font-weight: 530;
@@ -297,22 +430,22 @@
 }
 @media screen and (max-width: 640px) {
   .rs-h2 {
-    --rs-h2-font-size:var(--rs-h2-font-size-mobile, 28px);
-    --rs-h2-line-height:var(--rs-h2-line-height-mobile, 32px);
+    --rs-h2-font-size: var(--rs-h2-font-size-mobile, 28px);
+    --rs-h2-line-height: var(--rs-h2-line-height-mobile, 32px);
   }
 }
 .rs-h2_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-h2_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-h2_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-h3 {
   letter-spacing: normal;
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -328,7 +461,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-ui,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 20px;
   font-size: var(--rs-h3-font-size, 20px);
   font-weight: 530;
@@ -337,16 +489,16 @@
   line-height: var(--rs-h3-line-height, 28px);
 }
 .rs-h3_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-h3_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-h3_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-text-1 {
   color: rgba(25, 25, 28, 0.7);
-  color: var(--rs-typography-color-average, rgba(25,25,28,0.7));
+  color: var(--rs-typography-color-average, rgba(25, 25, 28, 0.7));
   font-family:
     "JetBrains Sans",
     Inter,
@@ -362,7 +514,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-ui,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 19px;
   font-size: var(--rs-text-1-font-size, 19px);
   font-weight: normal;
@@ -371,46 +542,46 @@
 }
 .rs-text-1_paragraph-offset-auto > p:not(:first-of-type) {
   margin-top: 32px;
-  margin-top: calc(var(--rs-flow-unit, 8px)*4);
+  margin-top: calc(var(--rs-flow-unit, 8px) * 4);
 }
 .rs-text-1_theme_dark {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-color-average, rgba(255,255,255,0.7));
+  color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
 }
-[class*=_theme_dark] .rs-text-1_theme_auto {
+[class*="_theme_dark"] .rs-text-1_theme_auto {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-color-average, rgba(255,255,255,0.7));
+  color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
 }
 .rs-text-1_hardness_hard {
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
 }
 .rs-text-1_hardness_average {
   color: rgba(25, 25, 28, 0.7);
-  color: var(--rs-typography-color-average, rgba(25,25,28,0.7));
+  color: var(--rs-typography-color-average, rgba(25, 25, 28, 0.7));
 }
 .rs-text-1_hardness_pale {
   color: rgba(25, 25, 28, 0.5);
-  color: var(--rs-typography-color-pale, rgba(25,25,28,0.5));
+  color: var(--rs-typography-color-pale, rgba(25, 25, 28, 0.5));
 }
 .rs-text-1_theme_dark.rs-text-1_hardness_hard,
-[class*=_theme_dark] .rs-text-1_theme_auto.rs-text-1_hardness_hard {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-text-1_theme_auto.rs-text-1_hardness_hard {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-text-1_theme_dark.rs-text-1_hardness_average,
-[class*=_theme_dark] .rs-text-1_theme_auto.rs-text-1_hardness_average {
+[class*="_theme_dark"] .rs-text-1_theme_auto.rs-text-1_hardness_average {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-color-average, rgba(255,255,255,0.7));
+  color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
 }
 .rs-text-1_theme_dark.rs-text-1_hardness_pale,
-[class*=_theme_dark] .rs-text-1_theme_auto.rs-text-1_hardness_pale {
+[class*="_theme_dark"] .rs-text-1_theme_auto.rs-text-1_hardness_pale {
   color: rgba(255, 255, 255, 0.5);
-  color: var(--rs-typography-color-pale, rgba(255,255,255,0.5));
+  color: var(--rs-typography-color-pale, rgba(255, 255, 255, 0.5));
 }
 .rs-h4 {
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -426,7 +597,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-ui,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 17px;
   font-size: var(--rs-h4-font-size, 17px);
   font-weight: 530;
@@ -435,17 +625,17 @@
   line-height: var(--rs-h4-line-height, 24px);
 }
 .rs-h4_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-h4_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-h4_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-text-2 {
   letter-spacing: 0.0015em;
   color: rgba(25, 25, 28, 0.7);
-  color: var(--rs-typography-color-average, rgba(25,25,28,0.7));
+  color: var(--rs-typography-color-average, rgba(25, 25, 28, 0.7));
   font-family:
     "JetBrains Sans",
     Inter,
@@ -461,7 +651,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-ui,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 16px;
   font-size: var(--rs-text-2-font-size, 16px);
   font-weight: 400;
@@ -473,46 +682,46 @@
 }
 .rs-text-2_paragraph-offset-auto > p:not(:first-of-type) {
   margin-top: 16px;
-  margin-top: calc(var(--rs-flow-unit, 8px)*2);
+  margin-top: calc(var(--rs-flow-unit, 8px) * 2);
 }
 .rs-text-2_theme_dark {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-color-average, rgba(255,255,255,0.7));
+  color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
 }
-[class*=_theme_dark] .rs-text-2_theme_auto {
+[class*="_theme_dark"] .rs-text-2_theme_auto {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-color-average, rgba(255,255,255,0.7));
+  color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
 }
 .rs-text-2_hardness_hard {
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
 }
 .rs-text-2_hardness_average {
   color: rgba(25, 25, 28, 0.7);
-  color: var(--rs-typography-color-average, rgba(25,25,28,0.7));
+  color: var(--rs-typography-color-average, rgba(25, 25, 28, 0.7));
 }
 .rs-text-2_hardness_pale {
   color: rgba(25, 25, 28, 0.5);
-  color: var(--rs-typography-color-pale, rgba(25,25,28,0.5));
+  color: var(--rs-typography-color-pale, rgba(25, 25, 28, 0.5));
 }
 .rs-text-2_theme_dark.rs-text-2_hardness_hard,
-[class*=_theme_dark] .rs-text-2_theme_auto.rs-text-2_hardness_hard {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-text-2_theme_auto.rs-text-2_hardness_hard {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-text-2_theme_dark.rs-text-2_hardness_average,
-[class*=_theme_dark] .rs-text-2_theme_auto.rs-text-2_hardness_average {
+[class*="_theme_dark"] .rs-text-2_theme_auto.rs-text-2_hardness_average {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-color-average, rgba(255,255,255,0.7));
+  color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
 }
 .rs-text-2_theme_dark.rs-text-2_hardness_pale,
-[class*=_theme_dark] .rs-text-2_theme_auto.rs-text-2_hardness_pale {
+[class*="_theme_dark"] .rs-text-2_theme_auto.rs-text-2_hardness_pale {
   color: rgba(255, 255, 255, 0.5);
-  color: var(--rs-typography-color-pale, rgba(255,255,255,0.5));
+  color: var(--rs-typography-color-pale, rgba(255, 255, 255, 0.5));
 }
 .rs-h5 {
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -528,7 +737,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-ui,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 14px;
   font-size: var(--rs-h5-font-size, 14px);
   font-weight: 530;
@@ -537,18 +765,18 @@
   line-height: var(--rs-h5-line-height, 20px);
 }
 .rs-h5_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-h5_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-h5_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-overline {
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
   font-family:
     "JetBrains Sans",
     Inter,
@@ -564,7 +792,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-ui,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 13px;
   font-size: var(--rs-overline-font-size, 13px);
   font-weight: 530;
@@ -573,17 +820,17 @@
   line-height: var(--rs-overline-line-height, 18px);
 }
 .rs-overline_theme_dark {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
-[class*=_theme_dark] .rs-overline_theme_auto {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-overline_theme_auto {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-text-3 {
   letter-spacing: 0.0045em;
   color: rgba(25, 25, 28, 0.7);
-  color: var(--rs-typography-color-average, rgba(25,25,28,0.7));
+  color: var(--rs-typography-color-average, rgba(25, 25, 28, 0.7));
   font-family:
     "JetBrains Sans",
     Inter,
@@ -599,7 +846,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-ui,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   font-size: 13px;
   font-size: var(--rs-text-3-font-size, 13px);
   line-height: 20px;
@@ -614,38 +880,38 @@
 }
 .rs-text-3_theme_dark {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-color-average, rgba(255,255,255,0.7));
+  color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
 }
-[class*=_theme_dark] .rs-text-3_theme_auto {
+[class*="_theme_dark"] .rs-text-3_theme_auto {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-color-average, rgba(255,255,255,0.7));
+  color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
 }
 .rs-text-3_hardness_hard {
-  color: #19191C;
-  color: var(--rs-typography-color-hard, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-color-hard, #19191c);
 }
 .rs-text-3_hardness_average {
   color: rgba(25, 25, 28, 0.7);
-  color: var(--rs-typography-color-average, rgba(25,25,28,0.7));
+  color: var(--rs-typography-color-average, rgba(25, 25, 28, 0.7));
 }
 .rs-text-3_hardness_pale {
   color: rgba(25, 25, 28, 0.5);
-  color: var(--rs-typography-color-pale, rgba(25,25,28,0.5));
+  color: var(--rs-typography-color-pale, rgba(25, 25, 28, 0.5));
 }
 .rs-text-3_theme_dark.rs-text-3_hardness_hard,
-[class*=_theme_dark] .rs-text-3_theme_auto.rs-text-3_hardness_hard {
-  color: #FFFFFF;
-  color: var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-text-3_theme_auto.rs-text-3_hardness_hard {
+  color: #ffffff;
+  color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-text-3_theme_dark.rs-text-3_hardness_average,
-[class*=_theme_dark] .rs-text-3_theme_auto.rs-text-3_hardness_average {
+[class*="_theme_dark"] .rs-text-3_theme_auto.rs-text-3_hardness_average {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-color-average, rgba(255,255,255,0.7));
+  color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
 }
 .rs-text-3_theme_dark.rs-text-3_hardness_pale,
-[class*=_theme_dark] .rs-text-3_theme_auto.rs-text-3_hardness_pale {
+[class*="_theme_dark"] .rs-text-3_theme_auto.rs-text-3_hardness_pale {
   color: rgba(255, 255, 255, 0.5);
-  color: var(--rs-typography-color-pale, rgba(255,255,255,0.5));
+  color: var(--rs-typography-color-pale, rgba(255, 255, 255, 0.5));
 }
 .rs-ul {
   font-family:
@@ -663,7 +929,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-ui,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   list-style-type: none;
   padding-left: 0;
 }
@@ -723,33 +1008,33 @@
     margin-top: 16px;
   }
 }
-.rs-ul:not([class*=_offset-items_]).rs-text-2 > li,
-.rs-text-2 .rs-ul:not([class*=_offset-items_]) > li {
+.rs-ul:not([class*="_offset-items_"]).rs-text-2 > li,
+.rs-text-2 .rs-ul:not([class*="_offset-items_"]) > li {
   margin-top: 16px;
 }
 @media screen and (max-width: 640px) {
-  .rs-ul:not([class*=_offset-items_]).rs-text-2 > li,
-  .rs-text-2 .rs-ul:not([class*=_offset-items_]) > li {
+  .rs-ul:not([class*="_offset-items_"]).rs-text-2 > li,
+  .rs-text-2 .rs-ul:not([class*="_offset-items_"]) > li {
     margin-top: 12px;
   }
 }
-.rs-ul:not([class*=_offset-items_]).rs-text-1 > li,
-.rs-text-1 .rs-ul:not([class*=_offset-items_]) > li {
+.rs-ul:not([class*="_offset-items_"]).rs-text-1 > li,
+.rs-text-1 .rs-ul:not([class*="_offset-items_"]) > li {
   margin-top: 24px;
 }
 @media screen and (max-width: 640px) {
-  .rs-ul:not([class*=_offset-items_]).rs-text-1 > li,
-  .rs-text-1 .rs-ul:not([class*=_offset-items_]) > li {
+  .rs-ul:not([class*="_offset-items_"]).rs-text-1 > li,
+  .rs-text-1 .rs-ul:not([class*="_offset-items_"]) > li {
     margin-top: 16px;
   }
 }
-.rs-ul:not([class*=_offset-items_]).rs-text-3 > li,
-.rs-text-3 .rs-ul:not([class*=_offset-items_]) > li {
+.rs-ul:not([class*="_offset-items_"]).rs-text-3 > li,
+.rs-text-3 .rs-ul:not([class*="_offset-items_"]) > li {
   margin-top: 8px;
 }
 @media screen and (max-width: 640px) {
-  .rs-ul:not([class*=_offset-items_]).rs-text-3 > li,
-  .rs-text-3 .rs-ul:not([class*=_offset-items_]) > li {
+  .rs-ul:not([class*="_offset-items_"]).rs-text-3 > li,
+  .rs-text-3 .rs-ul:not([class*="_offset-items_"]) > li {
     margin-top: 8px;
   }
 }
@@ -780,7 +1065,26 @@
     "Helvetica Neue",
     Arial,
     sans-serif;
-  font-family: var(--rs-font-family-ui, var(--rs-font-family-jb-sans, "JetBrains Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Droid Sans", "Helvetica Neue", Arial, sans-serif));
+  font-family: var(
+    --rs-font-family-ui,
+    var(
+      --rs-font-family-jb-sans,
+      "JetBrains Sans",
+      Inter,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Droid Sans",
+      "Helvetica Neue",
+      Arial,
+      sans-serif
+    )
+  );
   list-style-type: none;
   padding-left: 0;
 }
@@ -840,33 +1144,33 @@
     margin-top: 16px;
   }
 }
-.rs-ol:not([class*=_offset-items_]).rs-text-2 > li,
-.rs-text-2 .rs-ol:not([class*=_offset-items_]) > li {
+.rs-ol:not([class*="_offset-items_"]).rs-text-2 > li,
+.rs-text-2 .rs-ol:not([class*="_offset-items_"]) > li {
   margin-top: 16px;
 }
 @media screen and (max-width: 640px) {
-  .rs-ol:not([class*=_offset-items_]).rs-text-2 > li,
-  .rs-text-2 .rs-ol:not([class*=_offset-items_]) > li {
+  .rs-ol:not([class*="_offset-items_"]).rs-text-2 > li,
+  .rs-text-2 .rs-ol:not([class*="_offset-items_"]) > li {
     margin-top: 12px;
   }
 }
-.rs-ol:not([class*=_offset-items_]).rs-text-1 > li,
-.rs-text-1 .rs-ol:not([class*=_offset-items_]) > li {
+.rs-ol:not([class*="_offset-items_"]).rs-text-1 > li,
+.rs-text-1 .rs-ol:not([class*="_offset-items_"]) > li {
   margin-top: 24px;
 }
 @media screen and (max-width: 640px) {
-  .rs-ol:not([class*=_offset-items_]).rs-text-1 > li,
-  .rs-text-1 .rs-ol:not([class*=_offset-items_]) > li {
+  .rs-ol:not([class*="_offset-items_"]).rs-text-1 > li,
+  .rs-text-1 .rs-ol:not([class*="_offset-items_"]) > li {
     margin-top: 16px;
   }
 }
-.rs-ol:not([class*=_offset-items_]).rs-text-3 > li,
-.rs-text-3 .rs-ol:not([class*=_offset-items_]) > li {
+.rs-ol:not([class*="_offset-items_"]).rs-text-3 > li,
+.rs-text-3 .rs-ol:not([class*="_offset-items_"]) > li {
   margin-top: 8px;
 }
 @media screen and (max-width: 640px) {
-  .rs-ol:not([class*=_offset-items_]).rs-text-3 > li,
-  .rs-text-3 .rs-ol:not([class*=_offset-items_]) > li {
+  .rs-ol:not([class*="_offset-items_"]).rs-text-3 > li,
+  .rs-text-3 .rs-ol:not([class*="_offset-items_"]) > li {
     margin-top: 8px;
   }
 }
@@ -904,19 +1208,22 @@
   padding: 12px 16px;
   word-wrap: normal;
   font-family:
+    SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: var(
+    --rs-font-family-mono,
     SFMono-Regular,
     Consolas,
     "Liberation Mono",
     Menlo,
     Courier,
-    monospace;
-  font-family: var(--rs-font-family-mono, SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace);
+    monospace
+  );
   font-size: 16px;
   line-height: 24px;
-  color: #19191C;
-  color: var(--rs-typography-pre-color, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-pre-color, #19191c);
   background-color: rgba(25, 25, 28, 0.1);
-  background-color: var(--rs-typography-pre-bg-color, rgba(25,25,28,0.1));
+  background-color: var(--rs-typography-pre-bg-color, rgba(25, 25, 28, 0.1));
   border-radius: 8px;
   display: block;
 }
@@ -937,116 +1244,137 @@
   background: transparent !important;
   color: inherit !important;
   font-family:
+    SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: var(
+    --rs-font-family-mono,
     SFMono-Regular,
     Consolas,
     "Liberation Mono",
     Menlo,
     Courier,
-    monospace;
-  font-family: var(--rs-font-family-mono, SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace);
+    monospace
+  );
   line-height: inherit;
 }
 .rs-pre_theme_dark {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-pre-color, rgba(255,255,255,0.7));
+  color: var(--rs-typography-pre-color, rgba(255, 255, 255, 0.7));
   background-color: rgba(255, 255, 255, 0.1);
-  background-color: var(--rs-typography-pre-bg-color, rgba(255,255,255,0.1));
+  background-color: var(--rs-typography-pre-bg-color, rgba(255, 255, 255, 0.1));
 }
-[class*=_theme_dark] .rs-pre_theme_auto {
+[class*="_theme_dark"] .rs-pre_theme_auto {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-pre-color, rgba(255,255,255,0.7));
+  color: var(--rs-typography-pre-color, rgba(255, 255, 255, 0.7));
   background-color: rgba(255, 255, 255, 0.1);
-  background-color: var(--rs-typography-pre-bg-color, rgba(255,255,255,0.1));
+  background-color: var(--rs-typography-pre-bg-color, rgba(255, 255, 255, 0.1));
 }
 .rs-code {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0.11111em 0.44444em;
-  color: #19191C;
-  color: var(--rs-typography-pre-color, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-pre-color, #19191c);
   background-color: rgba(25, 25, 28, 0.1);
-  background-color: var(--rs-typography-pre-bg-color, rgba(25,25,28,0.1));
+  background-color: var(--rs-typography-pre-bg-color, rgba(25, 25, 28, 0.1));
   font-family:
+    SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: var(
+    --rs-font-family-mono,
     SFMono-Regular,
     Consolas,
     "Liberation Mono",
     Menlo,
     Courier,
-    monospace;
-  font-family: var(--rs-font-family-mono, SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace);
+    monospace
+  );
   font-size: 90%;
   line-height: inherit;
   border-radius: 4px;
 }
 .rs-code_theme_dark {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-pre-color, rgba(255,255,255,0.7));
+  color: var(--rs-typography-pre-color, rgba(255, 255, 255, 0.7));
   background-color: rgba(255, 255, 255, 0.1);
-  background-color: var(--rs-typography-pre-bg-color, rgba(255,255,255,0.1));
+  background-color: var(--rs-typography-pre-bg-color, rgba(255, 255, 255, 0.1));
 }
-[class*=_theme_dark] .rs-code_theme_auto {
+[class*="_theme_dark"] .rs-code_theme_auto {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-pre-color, rgba(255,255,255,0.7));
+  color: var(--rs-typography-pre-color, rgba(255, 255, 255, 0.7));
   background-color: rgba(255, 255, 255, 0.1);
-  background-color: var(--rs-typography-pre-bg-color, rgba(255,255,255,0.1));
+  background-color: var(--rs-typography-pre-bg-color, rgba(255, 255, 255, 0.1));
 }
-[class*=rs-text] code:not([class*=rs-code]) {
+[class*="rs-text"] code:not([class*="rs-code"]) {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0.11111em 0.44444em;
-  color: #19191C;
-  color: var(--rs-typography-pre-color, #19191C);
+  color: #19191c;
+  color: var(--rs-typography-pre-color, #19191c);
   background-color: rgba(25, 25, 28, 0.1);
-  background-color: var(--rs-typography-pre-bg-color, rgba(25,25,28,0.1));
+  background-color: var(--rs-typography-pre-bg-color, rgba(25, 25, 28, 0.1));
   font-family:
+    SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: var(
+    --rs-font-family-mono,
     SFMono-Regular,
     Consolas,
     "Liberation Mono",
     Menlo,
     Courier,
-    monospace;
-  font-family: var(--rs-font-family-mono, SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace);
+    monospace
+  );
   font-size: 90%;
   line-height: inherit;
   border-radius: 4px;
 }
-[class*=_theme_dark] code:not([class*=rs-code]) {
+[class*="_theme_dark"] code:not([class*="rs-code"]) {
   color: rgba(255, 255, 255, 0.7);
-  color: var(--rs-typography-pre-color, rgba(255,255,255,0.7));
+  color: var(--rs-typography-pre-color, rgba(255, 255, 255, 0.7));
   background-color: rgba(255, 255, 255, 0.1);
-  background-color: var(--rs-typography-pre-bg-color, rgba(255,255,255,0.1));
+  background-color: var(--rs-typography-pre-bg-color, rgba(255, 255, 255, 0.1));
 }
 .rs-link {
-  --rs-link-color:var(--rs-typography-color-hard, #19191C);
-  --rs-link-color-hover:var(--rs-typography-text-link-hover-color, #FFFFFF);
-  --rs-underline-color:var(--rs-typography-color-hard, #19191C);
+  --rs-link-color: var(--rs-typography-color-hard, #19191c);
+  --rs-link-color-hover: var(--rs-typography-text-link-hover-color, #ffffff);
+  --rs-underline-color: var(--rs-typography-color-hard, #19191c);
   padding-bottom: 1px;
   outline: none;
   cursor: pointer;
   text-decoration: none;
-  color: #19191C;
+  color: #19191c;
   color: var(--rs-link-color);
   font-size: inherit;
   line-height: inherit;
-  border-bottom: 1px solid #19191C;
+  border-bottom: 1px solid #19191c;
   border-bottom: 1px solid var(--rs-underline-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #19191C), color-stop(0, transparent));
-  background-image:
-    linear-gradient(
-      to bottom,
-      #19191C 100%,
-      transparent 0);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, var(--rs-underline-color)), color-stop(0, transparent));
-  background-image:
-    linear-gradient(
-      to bottom,
-      var(--rs-underline-color) 100%,
-      transparent 0);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(100%, #19191c),
+    color-stop(0, transparent)
+  );
+  background-image: linear-gradient(to bottom, #19191c 100%, transparent 0);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(100%, var(--rs-underline-color)),
+    color-stop(0, transparent)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    var(--rs-underline-color) 100%,
+    transparent 0
+  );
   background-size: auto 0;
   background-repeat: repeat-x;
   background-position: left calc(100% + 4px);
-  -webkit-transition: background-size 300ms, color 300ms;
-  transition: background-size 300ms, color 300ms;
+  -webkit-transition:
+    background-size 300ms,
+    color 300ms;
+  transition:
+    background-size 300ms,
+    color 300ms;
 }
 @media all and (-ms-high-contrast: none) {
   .rs-link {
@@ -1056,47 +1384,47 @@
 }
 .rs-link:active,
 .rs-link:focus {
-  color: #19191C;
+  color: #19191c;
   color: var(--rs-link-color);
 }
 .rs-link:hover {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   color: var(--rs-link-color-hover);
   background-size: auto calc(100% + 4px);
 }
-.rs-link:focus[data-focus-method=key] {
+.rs-link:focus[data-focus-method="key"] {
   -webkit-box-shadow: #4597ff 0 0 0 4px;
   -webkit-box-shadow: var(--rs-color-primary-dim-light-theme, #4597ff) 0 0 0 4px;
   box-shadow: #4597ff 0 0 0 4px;
   box-shadow: var(--rs-color-primary-dim-light-theme, #4597ff) 0 0 0 4px;
 }
-[class*=rs-super-hero] .rs-link {
+[class*="rs-super-hero"] .rs-link {
   padding-bottom: 0;
   border-bottom-width: 5px;
 }
 @media screen and (max-width: 640px) {
-  [class*=rs-super-hero] .rs-link {
+  [class*="rs-super-hero"] .rs-link {
     border-bottom-width: 2px;
   }
 }
-[class*=rs-hero] .rs-link {
+[class*="rs-hero"] .rs-link {
   padding-bottom: 0;
   border-bottom-width: 4px;
 }
 @media screen and (max-width: 640px) {
-  [class*=rs-hero] .rs-link {
+  [class*="rs-hero"] .rs-link {
     border-bottom-width: 2px;
   }
 }
-[class*=rs-h1] .rs-link,
-[class*=rs-h2] .rs-link,
-[class*=rs-h3] .rs-link,
-[class*=rs-h4] .rs-link,
-[class*=rs-h5] .rs-link,
-[class*=rs-overline] .rs-link,
-[class*=rs-subtitle-1] .rs-link,
-[class*=rs-subtitle-2] .rs-link {
+[class*="rs-h1"] .rs-link,
+[class*="rs-h2"] .rs-link,
+[class*="rs-h3"] .rs-link,
+[class*="rs-h4"] .rs-link,
+[class*="rs-h5"] .rs-link,
+[class*="rs-overline"] .rs-link,
+[class*="rs-subtitle-1"] .rs-link,
+[class*="rs-subtitle-2"] .rs-link {
   padding-bottom: 0;
   border-bottom-width: 2px;
 }
@@ -1107,8 +1435,8 @@
   margin-left: 0;
 }
 .rs-link_mode_standalone {
-  --rs-link-color-hover:var(--rs-typography-color-hard, #19191C);
-  --rs-link-standalone-border-offset:1.15em;
+  --rs-link-color-hover: var(--rs-typography-color-hard, #19191c);
+  --rs-link-standalone-border-offset: 1.15em;
   border-bottom-color: transparent;
   background-image: none;
   background-size: initial;
@@ -1122,68 +1450,92 @@
   display: inline;
   margin-right: 0.15em;
   margin-left: 0.15em;
-  -webkit-transition: margin-right 300ms, margin-left 300ms;
-  transition: margin-right 300ms, margin-left 300ms;
+  -webkit-transition:
+    margin-right 300ms,
+    margin-left 300ms;
+  transition:
+    margin-right 300ms,
+    margin-left 300ms;
 }
 .rs-link_mode_standalone:hover {
-  color: #19191C;
+  color: #19191c;
   color: var(--rs-link-color-hover);
-  border-bottom-color: #19191C;
+  border-bottom-color: #19191c;
   border-bottom-color: var(--rs-underline-color);
-  -o-border-image:
-    linear-gradient(
+  -o-border-image: linear-gradient(
       to right,
-      #19191C calc(100% - 1.1em),
-      transparent 1.1em) 1;
-  border-image: -webkit-gradient(linear, left top, right top, from(#19191C), color-stop(1.1em, transparent)) 1;
-  border-image:
-    linear-gradient(
+      #19191c calc(100% - 1.1em),
+      transparent 1.1em
+    )
+    1;
+  border-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#19191c),
+      color-stop(1.1em, transparent)
+    )
+    1;
+  border-image: linear-gradient(
       to right,
-      #19191C calc(100% - 1.1em),
-      transparent 1.1em) 1;
-  -o-border-image:
-    linear-gradient(
+      #19191c calc(100% - 1.1em),
+      transparent 1.1em
+    )
+    1;
+  -o-border-image: linear-gradient(
       to right,
-      var(--rs-underline-color) calc(100% - var(--rs-link-standalone-border-offset)),
-      transparent var(--rs-link-standalone-border-offset)) 1;
-  border-image: -webkit-gradient(linear, left top, right top, from(var(--rs-underline-color)), to(transparent)) 1;
-  border-image:
-    linear-gradient(
+      var(--rs-underline-color)
+        calc(100% - var(--rs-link-standalone-border-offset)),
+      transparent var(--rs-link-standalone-border-offset)
+    )
+    1;
+  border-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--rs-underline-color)),
+      to(transparent)
+    )
+    1;
+  border-image: linear-gradient(
       to right,
-      var(--rs-underline-color) calc(100% - var(--rs-link-standalone-border-offset)),
-      transparent var(--rs-link-standalone-border-offset)) 1;
+      var(--rs-underline-color)
+        calc(100% - var(--rs-link-standalone-border-offset)),
+      transparent var(--rs-link-standalone-border-offset)
+    )
+    1;
 }
 .rs-link_mode_standalone:hover:after {
   margin-right: 0;
   margin-left: 0.3em;
 }
-[class*=rs-super-hero] .rs-link_mode_standalone,
-[class*=rs-hero] .rs-link_mode_standalone,
-[class*=rs-h1] .rs-link_mode_standalone,
-[class*=rs-h2] .rs-link_mode_standalone {
-  --rs-link-standalone-border-offset:1.12em;
+[class*="rs-super-hero"] .rs-link_mode_standalone,
+[class*="rs-hero"] .rs-link_mode_standalone,
+[class*="rs-h1"] .rs-link_mode_standalone,
+[class*="rs-h2"] .rs-link_mode_standalone {
+  --rs-link-standalone-border-offset: 1.12em;
 }
-[class*=rs-overline] .rs-link_mode_standalone {
-  --rs-link-standalone-border-offset:1.3em;
+[class*="rs-overline"] .rs-link_mode_standalone {
+  --rs-link-standalone-border-offset: 1.3em;
 }
 .rs-link_mode_standalone.rs-link_external {
-  --rs-link-standalone-border-offset:1.02em;
+  --rs-link-standalone-border-offset: 1.02em;
 }
 .rs-link_mode_standalone.rs-link_external:after {
   content: "\2197";
 }
-[class*=rs-super-hero] .rs-link_mode_standalone.rs-link_external,
-[class*=rs-hero] .rs-link_mode_standalone.rs-link_external,
-[class*=rs-h1] .rs-link_mode_standalone.rs-link_external,
-[class*=rs-h2] .rs-link_mode_standalone.rs-link_external {
-  --rs-link-standalone-border-offset:1em;
+[class*="rs-super-hero"] .rs-link_mode_standalone.rs-link_external,
+[class*="rs-hero"] .rs-link_mode_standalone.rs-link_external,
+[class*="rs-h1"] .rs-link_mode_standalone.rs-link_external,
+[class*="rs-h2"] .rs-link_mode_standalone.rs-link_external {
+  --rs-link-standalone-border-offset: 1em;
 }
-[class*=rs-overline] .rs-link_mode_standalone.rs-link_external {
-  --rs-link-standalone-border-offset:1.15em;
+[class*="rs-overline"] .rs-link_mode_standalone.rs-link_external {
+  --rs-link-standalone-border-offset: 1.15em;
 }
 .rs-link_mode_clear {
-  --rs-link-color:var(--rs-typography-color-average, rgba(25,25,28,0.7));
-  --rs-link-color-hover:var(--rs-typography-color-hard, #19191C);
+  --rs-link-color: var(--rs-typography-color-average, rgba(25, 25, 28, 0.7));
+  --rs-link-color-hover: var(--rs-typography-color-hard, #19191c);
   border-bottom-color: transparent;
   background-image: none;
   background-size: initial;
@@ -1195,152 +1547,188 @@
   color: var(--rs-link-color);
 }
 .rs-link_mode_clear:hover {
-  border-bottom-color: #19191C;
+  border-bottom-color: #19191c;
   border-bottom-color: var(--rs-underline-color);
-  color: #19191C;
+  color: #19191c;
   color: var(--rs-link-color-hover);
 }
 .rs-link_hardness_hard {
-  --rs-link-color:var(--rs-typography-color-hard, #19191C);
+  --rs-link-color: var(--rs-typography-color-hard, #19191c);
 }
 .rs-link_hardness_average {
-  --rs-link-color:var(--rs-typography-color-average, rgba(25,25,28,0.7));
+  --rs-link-color: var(--rs-typography-color-average, rgba(25, 25, 28, 0.7));
 }
 .rs-link_hardness_pale {
-  --rs-link-color:var(--rs-typography-color-pale, rgba(25,25,28,0.5));
+  --rs-link-color: var(--rs-typography-color-pale, rgba(25, 25, 28, 0.5));
 }
 .rs-link_theme_dark {
-  --rs-link-color:var(--rs-typography-color-hard, #FFFFFF);
-  --rs-link-color-hover:var(--rs-typography-text-link-hover-color, #19191C);
-  --rs-underline-color:var(--rs-typography-color-hard, #FFFFFF);
-  color: #FFFFFF;
+  --rs-link-color: var(--rs-typography-color-hard, #ffffff);
+  --rs-link-color-hover: var(--rs-typography-text-link-hover-color, #19191c);
+  --rs-underline-color: var(--rs-typography-color-hard, #ffffff);
+  color: #ffffff;
   color: var(--rs-link-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #FFFFFF), color-stop(0, transparent));
-  background-image:
-    linear-gradient(
-      to bottom,
-      #FFFFFF 100%,
-      transparent 0);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, var(--rs-underline-color)), color-stop(0, transparent));
-  background-image:
-    linear-gradient(
-      to bottom,
-      var(--rs-underline-color) 100%,
-      transparent 0);
-  border-bottom-color: #FFFFFF;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(100%, #ffffff),
+    color-stop(0, transparent)
+  );
+  background-image: linear-gradient(to bottom, #ffffff 100%, transparent 0);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(100%, var(--rs-underline-color)),
+    color-stop(0, transparent)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    var(--rs-underline-color) 100%,
+    transparent 0
+  );
+  border-bottom-color: #ffffff;
   border-bottom-color: var(--rs-underline-color);
 }
 .rs-link_theme_dark:active,
 .rs-link_theme_dark:focus {
-  color: #FFFFFF;
+  color: #ffffff;
   color: var(--rs-link-color);
 }
 .rs-link_theme_dark:hover {
-  color: #19191C;
+  color: #19191c;
   color: var(--rs-link-color-hover);
 }
-.rs-link_theme_dark:focus[data-focus-method=key] {
+.rs-link_theme_dark:focus[data-focus-method="key"] {
   -webkit-box-shadow: #428ad2 0 0 0 4px;
   -webkit-box-shadow: var(--rs-color-primary-dim-dark-theme, #428ad2) 0 0 0 4px;
   box-shadow: #428ad2 0 0 0 4px;
   box-shadow: var(--rs-color-primary-dim-dark-theme, #428ad2) 0 0 0 4px;
 }
-[class*=_theme_dark] .rs-link_theme_auto {
-  --rs-link-color:var(--rs-typography-color-hard, #FFFFFF);
-  --rs-link-color-hover:var(--rs-typography-text-link-hover-color, #19191C);
-  --rs-underline-color:var(--rs-typography-color-hard, #FFFFFF);
-  color: #FFFFFF;
+[class*="_theme_dark"] .rs-link_theme_auto {
+  --rs-link-color: var(--rs-typography-color-hard, #ffffff);
+  --rs-link-color-hover: var(--rs-typography-text-link-hover-color, #19191c);
+  --rs-underline-color: var(--rs-typography-color-hard, #ffffff);
+  color: #ffffff;
   color: var(--rs-link-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #FFFFFF), color-stop(0, transparent));
-  background-image:
-    linear-gradient(
-      to bottom,
-      #FFFFFF 100%,
-      transparent 0);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, var(--rs-underline-color)), color-stop(0, transparent));
-  background-image:
-    linear-gradient(
-      to bottom,
-      var(--rs-underline-color) 100%,
-      transparent 0);
-  border-bottom-color: #FFFFFF;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(100%, #ffffff),
+    color-stop(0, transparent)
+  );
+  background-image: linear-gradient(to bottom, #ffffff 100%, transparent 0);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(100%, var(--rs-underline-color)),
+    color-stop(0, transparent)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    var(--rs-underline-color) 100%,
+    transparent 0
+  );
+  border-bottom-color: #ffffff;
   border-bottom-color: var(--rs-underline-color);
 }
-[class*=_theme_dark] .rs-link_theme_auto:active,
-[class*=_theme_dark] .rs-link_theme_auto:focus {
-  color: #FFFFFF;
+[class*="_theme_dark"] .rs-link_theme_auto:active,
+[class*="_theme_dark"] .rs-link_theme_auto:focus {
+  color: #ffffff;
   color: var(--rs-link-color);
 }
-[class*=_theme_dark] .rs-link_theme_auto:hover {
-  color: #19191C;
+[class*="_theme_dark"] .rs-link_theme_auto:hover {
+  color: #19191c;
   color: var(--rs-link-color-hover);
 }
-[class*=_theme_dark] .rs-link_theme_auto:focus[data-focus-method=key] {
+[class*="_theme_dark"] .rs-link_theme_auto:focus[data-focus-method="key"] {
   -webkit-box-shadow: #428ad2 0 0 0 4px;
   -webkit-box-shadow: var(--rs-color-primary-dim-dark-theme, #428ad2) 0 0 0 4px;
   box-shadow: #428ad2 0 0 0 4px;
   box-shadow: var(--rs-color-primary-dim-dark-theme, #428ad2) 0 0 0 4px;
 }
 .rs-link_theme_dark.rs-link_mode_standalone,
-[class*=_theme_dark] .rs-link_theme_auto.rs-link_mode_standalone {
-  --rs-link-color-hover:var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-link_theme_auto.rs-link_mode_standalone {
+  --rs-link-color-hover: var(--rs-typography-color-hard, #ffffff);
   background-image: none;
   border-bottom-color: transparent;
 }
 .rs-link_theme_dark.rs-link_mode_standalone:hover,
-[class*=_theme_dark] .rs-link_theme_auto.rs-link_mode_standalone:hover {
-  color: #FFFFFF;
+[class*="_theme_dark"] .rs-link_theme_auto.rs-link_mode_standalone:hover {
+  color: #ffffff;
   color: var(--rs-link-color-hover);
-  border-bottom-color: #FFFFFF;
+  border-bottom-color: #ffffff;
   border-bottom-color: var(--rs-underline-color);
-  -o-border-image:
-    linear-gradient(
+  -o-border-image: linear-gradient(
       to right,
-      #FFFFFF calc(100% - 1.3em),
-      transparent 1.3em) 1;
-  border-image: -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(1.3em, transparent)) 1;
-  border-image:
-    linear-gradient(
+      #ffffff calc(100% - 1.3em),
+      transparent 1.3em
+    )
+    1;
+  border-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#ffffff),
+      color-stop(1.3em, transparent)
+    )
+    1;
+  border-image: linear-gradient(
       to right,
-      #FFFFFF calc(100% - 1.3em),
-      transparent 1.3em) 1;
-  -o-border-image:
-    linear-gradient(
+      #ffffff calc(100% - 1.3em),
+      transparent 1.3em
+    )
+    1;
+  -o-border-image: linear-gradient(
       to right,
-      var(--rs-underline-color) calc(100% - var(--rs-link-standalone-border-offset)),
-      transparent var(--rs-link-standalone-border-offset)) 1;
-  border-image: -webkit-gradient(linear, left top, right top, from(var(--rs-underline-color)), to(transparent)) 1;
-  border-image:
-    linear-gradient(
+      var(--rs-underline-color)
+        calc(100% - var(--rs-link-standalone-border-offset)),
+      transparent var(--rs-link-standalone-border-offset)
+    )
+    1;
+  border-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--rs-underline-color)),
+      to(transparent)
+    )
+    1;
+  border-image: linear-gradient(
       to right,
-      var(--rs-underline-color) calc(100% - var(--rs-link-standalone-border-offset)),
-      transparent var(--rs-link-standalone-border-offset)) 1;
+      var(--rs-underline-color)
+        calc(100% - var(--rs-link-standalone-border-offset)),
+      transparent var(--rs-link-standalone-border-offset)
+    )
+    1;
 }
 .rs-link_theme_dark.rs-link_mode_clear,
-[class*=_theme_dark] .rs-link_theme_auto.rs-link_mode_clear {
-  --rs-link-color:var(--rs-typography-color-average, rgba(255,255,255,0.7));
-  --rs-link-color-hover:var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-link_theme_auto.rs-link_mode_clear {
+  --rs-link-color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
+  --rs-link-color-hover: var(--rs-typography-color-hard, #ffffff);
   background-image: none;
   border-bottom-color: transparent;
   color: rgba(255, 255, 255, 0.7);
   color: var(--rs-link-color);
 }
 .rs-link_theme_dark.rs-link_mode_clear:hover,
-[class*=_theme_dark] .rs-link_theme_auto.rs-link_mode_clear:hover {
-  border-bottom-color: #FFFFFF;
+[class*="_theme_dark"] .rs-link_theme_auto.rs-link_mode_clear:hover {
+  border-bottom-color: #ffffff;
   border-bottom-color: var(--rs-underline-color);
-  color: #FFFFFF;
+  color: #ffffff;
   color: var(--rs-link-color-hover);
 }
 .rs-link_theme_dark.rs-link_hardness_hard,
-[class*=_theme_dark] .rs-link_theme_auto.rs-link_hardness_hard {
-  --rs-link-color:var(--rs-typography-color-hard, #FFFFFF);
+[class*="_theme_dark"] .rs-link_theme_auto.rs-link_hardness_hard {
+  --rs-link-color: var(--rs-typography-color-hard, #ffffff);
 }
 .rs-link_theme_dark.rs-link_hardness_average,
-[class*=_theme_dark] .rs-link_theme_auto.rs-link_hardness_average {
-  --rs-link-color:var(--rs-typography-color-average, rgba(255,255,255,0.7));
+[class*="_theme_dark"] .rs-link_theme_auto.rs-link_hardness_average {
+  --rs-link-color: var(--rs-typography-color-average, rgba(255, 255, 255, 0.7));
 }
 .rs-link_theme_dark.rs-link_hardness_pale,
-[class*=_theme_dark] .rs-link_theme_auto.rs-link_hardness_pale {
-  --rs-link-color:var(--rs-typography-color-pale, rgba(255,255,255,0.5));
+[class*="_theme_dark"] .rs-link_theme_auto.rs-link_hardness_pale {
+  --rs-link-color: var(--rs-typography-color-pale, rgba(255, 255, 255, 0.5));
 }

@@ -1,8 +1,10 @@
 import Button from "@rescui/button";
 import { useTextStyles } from "@rescui/typography";
 import cn from "classnames";
+
 import { Container, Section } from "~/components/layout/primitives";
-import { newsData } from "data/news";
+
+import { newsData } from "./data/news";
 import "./index.scss";
 
 const bannerImg = "/images/index/banners/kotlin-1.6.20.png";

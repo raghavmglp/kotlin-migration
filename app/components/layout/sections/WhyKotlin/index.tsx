@@ -1,15 +1,17 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import Button from "@rescui/button";
+import { Tab, TabList, TabSeparator } from "@rescui/tab-list";
 import { useTextStyles } from "@rescui/typography";
 import { ThemeProvider } from "@rescui/ui-contexts";
-import { TabList, Tab, TabSeparator } from "@rescui/tab-list";
 import cn from "classnames";
 import hljs from "highlight.js/lib/core";
 import kotlin from "highlight.js/lib/languages/kotlin";
 import "highlight.js/styles/github.css";
 
 import { Container, Section } from "~/components/layout/primitives";
-import { tabs } from "./programming-langauge/data";
+
+import { tabs } from "./data/data";
 import "./index.scss";
 
 hljs.registerLanguage("kotlin", kotlin);
@@ -17,7 +19,8 @@ hljs.registerLanguage("kotlin", kotlin);
 const sections = [
   {
     title: "A productive way to write server-side applications",
-    description: "Compatible with the Java ecosystem. Use your favorite JVM frameworks and libraries.",
+    description:
+      "Compatible with the Java ecosystem. Use your favorite JVM frameworks and libraries.",
     buttonText: "Learn more",
     buttonLink: "/lp/server-side/",
     media: "youtube",
@@ -25,14 +28,16 @@ const sections = [
   },
   {
     title: "Cross-platform layer for native applications",
-    description: "Share application logic between web, mobile, and desktop platforms while keeping an experience native to users. Save time and get the benefit of unlimited access to features specific to these platforms.",
+    description:
+      "Share application logic between web, mobile, and desktop platforms while keeping an experience native to users. Save time and get the benefit of unlimited access to features specific to these platforms.",
     buttonText: "Learn about Kotlin Multiplatform",
     buttonLink: "/docs/multiplatform.html",
     media: "image",
   },
   {
     title: "Big, friendly and helpful community",
-    description: "Kotlin has great support and many contributors in its fast-growing global community. Enjoy the benefits of a rich ecosystem with a wide range of community libraries. Help is never far away - consult extensive community resources or ask the Kotlin team directly.",
+    description:
+      "Kotlin has great support and many contributors in its fast-growing global community. Enjoy the benefits of a rich ecosystem with a wide range of community libraries. Help is never far away - consult extensive community resources or ask the Kotlin team directly.",
     buttonText: "Join the community",
     buttonLink: "/community/",
     media: "youtube",
@@ -96,7 +101,12 @@ function ProgrammingLanguage() {
         </TabList>
         <TabSeparator />
         <pre className="programming-language__code kto-offset-top-16">
-          <code className="hljs" dangerouslySetInnerHTML={{ __html: highlighted || tabs[activeIndex].code }} />
+          <code
+            className="hljs"
+            dangerouslySetInnerHTML={{
+              __html: highlighted || tabs[activeIndex].code,
+            }}
+          />
         </pre>
       </div>
     </div>
@@ -114,7 +124,10 @@ function WhyKotlinContent() {
         <ProgrammingLanguage />
 
         {sections.map((section, index) => (
-          <div key={index} className="kto-grid kto-grid-gap-32 kto-offset-top-96 kto-offset-top-md-48">
+          <div
+            key={index}
+            className="kto-grid kto-grid-gap-32 kto-offset-top-96 kto-offset-top-md-48"
+          >
             <div className="kto-col-4 kto-col-md-12">
               <h3 className={textCn("rs-h2")}>{section.title}</h3>
               <p className={cn(textCn("rs-text-2"), "kto-offset-top-32")}>
@@ -128,7 +141,9 @@ function WhyKotlinContent() {
             </div>
 
             <div className="kto-col-8 kto-col-md-12">
-              {section.media === "youtube" && <YouTubeEmbed id={section.youtubeId!} />}
+              {section.media === "youtube" && (
+                <YouTubeEmbed id={section.youtubeId!} />
+              )}
               {section.media === "image" && (
                 <img
                   src="/images/index/multiplatform.svg"
