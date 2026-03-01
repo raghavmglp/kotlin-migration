@@ -12,15 +12,14 @@ Raghav Mangalapalli - TU Eindhoven
 ## Getting Started
 
 Install dependencies:
-
 ```bash
 npm install --legacy-peer-deps
 ```
 
-Start the development server:
-
+Build and start the production server:
 ```bash
-npm run dev
+npm run build
+npm start
 ```
 
 ## Migration Approach
@@ -37,7 +36,7 @@ layout("components/layout/index.tsx", [index("routes/_index/route.tsx")]);
 
 ### SSR Compatibility
 
-The original project made direct `window` and `localStorage` calls at render time, which breaks SSR. These were fixed by moving all browser API calls into `useEffect` hooks so they only run on the client after hydration. For example:
+The original project made direct `window` and `localStorage` calls at render time, which breaks SSR. These were fixed by moving all calls into `useEffect` hooks so they only run on the client after hydration. For example:
 
 - `window.innerWidth` checks for responsive card visibility in `HeaderSection`
 - `localStorage` reads for testimonial sort order in `UsageSection`
@@ -76,7 +75,7 @@ The migration makes extensive use of JetBrains' `@rescui` design system:
 
 ### Note on Peer Dependencies
 
-Some `@rescui` packages declare peer dependencies on React 16–18. Since this project uses React 19, installation requires the `--legacy-peer-deps` flag. The packages function correctly at runtime despite the version mismatch.
+Some `@rescui` packages declare peer dependencies on React 17 which is incompatible with react-router 7. Since this project uses React 19, installation requires the `--legacy-peer-deps` flag. The packages function correctly at runtime despite the version mismatch. A choice was made to use a more modern react version along with the older packages.
 
 ### Potential Improvements
 
